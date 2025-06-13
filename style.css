@@ -31,7 +31,7 @@ body {
 }
 
 .start-text {
-  font-size: 29px;
+   font-size: clamp(18px, 5vw, 36px);
   text-align: center;
   color: white; /* Цвет текста */
     background-color: rgba(0, 0, 0, 0.5); /* Чёрный полупрозрачный фон */
