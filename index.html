@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Колесо Пожеланий</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen">
+    <img src="background_1.png" id="bg1" />
+    <div class="start-text"><h1>
+  🎂С днём рождения Братан!🎂 Желаю тебе мегаздоровья, гиперсчастья, суперуспехов, гигадостатка и ультраудачи! Пусть каждый твой день будет полон оптимизма, драйва и позитива! Спасибо, что ты есть — мой опора и пример! С ДР, брат! Люблю! У меня тут для тебя так же припасена игра-рулетка где вместо денег ты можешь выиграть дополнительные поздравления (присмотрись к заднему фону, потом поймёшь) :D 	
+</h1>
+</div>
+    <button id="start-button">Приступить к казино!</button>
+  </div>
+
+  <div id="game-screen" class="hidden">
+
+  <div id="tap-text">Тапни на торт!</div>
+    <img src="background_2.png" id="bg2" />
+  		<img id="win-gif" src="win.gif" class="hidden" />
+
+    <canvas id="wheel">
+	</canvas>
+	
+<div style="display: flex; justify-content: center;">
+  <button id="open-wishes">Открытые поздравления</button>
+</div>
+
+
+	<div id="overlay" class="hidden">
+  <div class="overlay-content">
+    <div id="wish-text"></div>
+    <button id="spin-again">Крутить ещё!</button>
+  </div>
+</div>
+
+<!-- Оверлей для списка поздравлений -->
+<div id="wishes-list-overlay" class="hidden">
+
+  <div class="overlay-content">
+    <h2>Открытые поздравления</h2>
+    <ul id="wishes-list"></ul>
+    <button id="close-wishes">Назад</button>
+  </div>
+</div>
+
+
+
+  
+</div>
+
+    <div id="result" class="result-text"></div>
+  </div>
+
+  <audio id="bg-music" src="music_1.mp3" loop></audio>
+  <audio id="wheel-sound" src="wheel.mp3" preload="auto"></audio>
+    <audio id="wheel-sound-win" src="wheel_win.mp3" preload="auto"></audio>
+<audio id="wheel-sound-again" src="wheel_again.mp3" preload="auto"></audio>
+
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
